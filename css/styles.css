@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+/*navbar*/
+
+.navbar-brand {
+    padding: 0 2rem 0 2rem;
+}
+.nav-item .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: black;
+}
+.navbar-nav .active a{
+    background: linear-gradient(to bottom, #9900cc 0%, #cc66ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.navbar-nav a:hover{
+    background: linear-gradient(to bottom, #9900cc 0%, #cc66ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*Landing Page*/
