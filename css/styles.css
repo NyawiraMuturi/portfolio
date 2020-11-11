@@ -1,9 +1,13 @@
+@import url(./variables/variables.css);
+
 body{
     overflow-x: hidden;
     margin: 0;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
 }
 
 /*navbar*/
@@ -18,16 +22,88 @@ body{
     color: black;
 }
 .navbar-nav .active a{
-    background: linear-gradient(to bottom, #9900cc 0%, #cc66ff 100%);
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 .navbar-nav a:hover{
-    background: linear-gradient(to bottom, #9900cc 0%, #cc66ff 100%);
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 /*Landing Page*/
+.landing{
+    padding-left: 12rem;
+    padding-top: 3rem;
+
+}
+
+.title-text{
+    padding-top: 15%;
+    font-weight: 500;
+}
+.title-text::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.start{
+    font-size: 5rem;
+}
+.prof{
+    font-size: 1.5rem;
+    font: bold;
+}
+.btn{
+    padding: .8rem 2.2rem;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+}
+.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+.primary-button::after, .secondary-button::after{
+    position: absolute;
+    top: -2px;left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: "";
+    z-index: -1;
+    border-radius: 4px;
+}
+.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+}
+
+.about{
+    padding: 2rem;
+}
+.space{
+    letter-spacing: 8px;
+}
+p{
+    font-size: 18px;
+}
